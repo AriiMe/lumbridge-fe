@@ -15,7 +15,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
+ @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
   --blue: #2a9fd6;
   --indigo: #6610f2;
@@ -54,7 +54,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: sans-serif;
+  font-family: 'Press Start 2P', cursive;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
@@ -73,11 +73,11 @@ section {
 }
 body {
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: 'Press Start 2P', -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 2;
   color: #adafae;
   text-align: left;
   background-color: #13132a;
@@ -345,19 +345,21 @@ h6 {
 }
 .h1,
 h1 {
-  font-size: 4rem;
+  font-size: 1.8rem;
+  padding: 1rem 0;
 }
 .h2,
 h2 {
-  font-size: 3rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
 }
 .h3,
 h3 {
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 .h4,
 h4 {
-  font-size: 2rem;
+  font-size: 0.5rem;
 }
 .h5,
 h5 {
@@ -4487,6 +4489,7 @@ input[type="submit"].btn-block {
   color: #fff;
 }
 .card {
+  
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -4494,10 +4497,12 @@ input[type="submit"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #282828;
+  background: rgb(25,23,60);
+  background: linear-gradient(90deg, rgba(25,23,60,1) 0%, rgba(25,23,60,1) 35%, rgba(30,27,63,1) 100%);
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 1px solid #30348B;
+  border-radius: 0;
+  height:33rem;
 }
 .card > hr {
   margin-right: 0;
@@ -4528,6 +4533,9 @@ input[type="submit"].btn-block {
   padding: 1.25rem;
 }
 .card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
   margin-bottom: 0.75rem;
 }
 .card-subtitle {
@@ -4535,6 +4543,7 @@ input[type="submit"].btn-block {
   margin-bottom: 0;
 }
 .card-text:last-child {
+  margin-top: 3rem;
   margin-bottom: 0;
 }
 .card-link:hover {
@@ -4577,11 +4586,13 @@ input[type="submit"].btn-block {
   bottom: 0;
   left: 0;
   padding: 1.25rem;
+  
   border-radius: calc(0.25rem - 1px);
 }
 .card-img,
 .card-img-bottom,
 .card-img-top {
+  height: 300px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
@@ -9777,6 +9788,11 @@ legend {
 }
 
 footer {
+  padding-bottom: 84px;
+  margin-bottom: 0px;
+  bottom: 0px;
+    left: 0px;
+    right: 0px;
   padding-top: 60px;
   background-color: #13132a;
   background-image: -webkit-gradient(
