@@ -13,6 +13,7 @@ import PaymentScreen from './pages/PaymentScreen'
 import PlaceOrderScreen from './pages/PlaceOrderScreen'
 import OrderScreen from './pages/OrderScreen'
 import UserListScreen from './pages/UserListScreen'
+import UserEditScreen from './pages/UserEditScreen'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path='/cart/:id?' component={CartScreen} />
 
           <Route path='/admin/userlist' component={UserListScreen} />
+          <Route path='/admin/user/:id/edit' component={UserEditScreen} />
         </Container>
       </main>
       <Footer />
